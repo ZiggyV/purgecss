@@ -7,3 +7,7 @@
 .some-item:nth-child(n+2){
   color: blue
 }
+.some-item:nth-child(1n+2){
+  color: blue
+}
+  

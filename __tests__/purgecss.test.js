@@ -336,6 +336,9 @@ describe('nth-child', () => {
     it('finds some-item:nth-child(n+2)', () => {
         expect(purgecssResult.includes('some-item:nth-child(n+2)')).toBe(true)
     })
+    it('finds some-item:nth-child(1n+2)', () => {
+        expect(purgecssResult.includes('some-item:nth-child(1n+2)')).toBe(true)
+    })
 })
 
 describe('keyframes', () => {
@@ -371,7 +374,7 @@ describe('pseudo selectors', () => {
         expect(purgecssResult.includes('some-item:nth-child(2n + 1)')).toBe(true)
     })
 
-    it('finds some-item:nth-of-typ(n+3)', () => {
+    it('finds some-item:nth-of-type(n+3)', () => {
         expect(purgecssResult.includes('some-item:nth-of-type(n+3)')).toBe(true)
     })
 
