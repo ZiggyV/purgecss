@@ -4,3 +4,6 @@
 .some-item:nth-child(2n+1){
   color: blue
 }
+.some-item:nth-child(n+2){
+  color: blue
+}

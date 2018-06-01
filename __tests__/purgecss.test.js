@@ -333,6 +333,9 @@ describe('nth-child', () => {
     it('finds some-item:nth-child(2n+1)', () => {
         expect(purgecssResult.includes('some-item:nth-child(2n+1)')).toBe(true)
     })
+    it('finds some-item:nth-child(n+2)', () => {
+        expect(purgecssResult.includes('some-item:nth-child(n+2)')).toBe(true)
+    })
 })
 
 describe('keyframes', () => {
@@ -366,6 +369,10 @@ describe('pseudo selectors', () => {
 
     it('finds some-item:nth-child(2n + 1)', () => {
         expect(purgecssResult.includes('some-item:nth-child(2n + 1)')).toBe(true)
+    })
+
+    it('finds some-item:nth-of-typ(n+3)', () => {
+        expect(purgecssResult.includes('some-item:nth-of-type(n+3)')).toBe(true)
     })
 
     it('removes unused:only-child()', () => {
