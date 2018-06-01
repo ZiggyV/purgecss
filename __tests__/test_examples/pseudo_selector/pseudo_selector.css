@@ -10,6 +10,10 @@
     color: goldenrod;
 }
 
+.some-item:nth-of-type(-1n+6) {
+    color: brown;
+}
+
 .unused:only-child() {
   color: red;
 }
